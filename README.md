@@ -7,7 +7,7 @@ ClickHouse Http Client for Deno runtime.
 
 ## Introduction
 
-This module is a client for ClickHouse database using the Http API
+This module is a client for ClickHouse database using the Http interface 
 https://clickhouse.com/docs/en/interfaces/http/.
 
 ## Usage
@@ -30,13 +30,13 @@ console.log(pingResult); // it prints Ok.
 To run the test suite you need to have a running instance of ClickHouse. For
 that you can use the docker-compose in the root of the repository.
 
-Run:
+Run the following to start ClickHouse server on docker 
 
 ```sh
 docker-compose up -d
 ```
 
-Then
+Then run the test suite
 
 ```sh
 deno test --allow-net
