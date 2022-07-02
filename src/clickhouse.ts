@@ -12,7 +12,7 @@ export class ClickHouse {
     protocol: undefined,
     host: undefined,
     port: 8123,
-    path: '/'
+    path: "/",
   }) {
     const { protocol, host, port, path } = options;
     this.url = `${protocol}://${host}:${port}${path}`;

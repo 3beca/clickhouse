@@ -18,7 +18,7 @@ Deno.test("ClickHouse should allow ping db", async () => {
     protocol: "http",
     host: "localhost",
     port: 8123,
-    path: '/'
+    path: "/",
   });
 
   const pingResult = await clickHouse.ping();
