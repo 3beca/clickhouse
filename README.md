@@ -10,6 +10,21 @@ ClickHouse Http Client for Deno runtime.
 This module is a client for ClickHouse database using the Http API
 https://clickhouse.com/docs/en/interfaces/http/.
 
+## Usage
+
+### Ping
+
+```
+  const clickHouse = new ClickHouse({
+    protocol: "http",
+    host: "localhost",
+    port: 8123,
+  });
+
+  const pingResult = await clickHouse.ping();
+  console.log(pingResult); // it prints Ok.
+```
+
 ## Test
 
 To run the test suite you need to have a running instance of ClickHouse. For
