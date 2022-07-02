@@ -5,6 +5,11 @@
 
 ClickHouse Http Client for Deno runtime.
 
+## Introduction
+
+This module is a client for ClickHouse database using the Http API
+https://clickhouse.com/docs/en/interfaces/http/.
+
 ## Test
 
 To run the test suite you need to have a running instance of ClickHouse. For
