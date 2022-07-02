@@ -1,3 +1,3 @@
-import { ClickHouse } from './src/clickhouse.ts';
+import { ClickHouse } from "./src/clickhouse.ts";
 
-export { ClickHouse }
+export { ClickHouse };
