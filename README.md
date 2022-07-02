@@ -7,7 +7,8 @@ ClickHouse Http Client for Deno runtime.
 
 ## Test
 
-To run the test suite you need to have a running instance of Click House. For that you can use the docker-compose in the root of the repository.
+To run the test suite you need to have a running instance of ClickHouse. For
+that you can use the docker-compose in the root of the repository.
 
 Run:
 
