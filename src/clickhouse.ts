@@ -2,6 +2,7 @@ type Options = {
   protocol: "http" | "https" | undefined;
   host: string | undefined;
   port: number;
+  path: string;
 };
 
 export class ClickHouse {
@@ -11,9 +12,10 @@ export class ClickHouse {
     protocol: undefined,
     host: undefined,
     port: 8123,
+    path: '/'
   }) {
-    const { protocol, host, port } = options;
-    this.url = `${protocol}://${host}:${port}/`;
+    const { protocol, host, port, path } = options;
+    this.url = `${protocol}://${host}:${port}${path}`;
   }
 
   public async ping(): Promise<string> {
