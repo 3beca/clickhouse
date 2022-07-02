@@ -14,7 +14,7 @@ https://clickhouse.com/docs/en/interfaces/http/.
 
 ### Ping
 
-```
+```typescript
   const clickHouse = new ClickHouse({
     protocol: "http",
     host: "localhost",
