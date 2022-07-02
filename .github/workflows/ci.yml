@@ -32,7 +32,7 @@ jobs:
         uses: EpicStep/clickhouse-github-action@v1.0.0
 
       - name: Run tests
-        run: deno test --coverage=coverage
+        run: deno test --coverage=coverage --allow-net
 
       - name: Create coverage report
         run: deno coverage ./coverage --lcov > coverage.lcov
