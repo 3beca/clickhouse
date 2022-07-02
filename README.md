@@ -15,14 +15,14 @@ https://clickhouse.com/docs/en/interfaces/http/.
 ### Ping
 
 ```typescript
-  const clickHouse = new ClickHouse({
-    protocol: "http",
-    host: "localhost",
-    port: 8123,
-  });
+const clickHouse = new ClickHouse({
+  protocol: "http",
+  host: "localhost",
+  port: 8123,
+});
 
-  const pingResult = await clickHouse.ping();
-  console.log(pingResult); // it prints Ok.
+const pingResult = await clickHouse.ping();
+console.log(pingResult); // it prints Ok.
 ```
 
 ## Test
