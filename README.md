@@ -1,3 +1,3 @@
 # clickhouse
 
-clickhouse http client
+clickhouse http client for Deno runtime.
